@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>spli<br />tter</h1>
+    </div>
+    <section class="main-section">
+      <label class="bill-label" for="bill">Bill</label>
+      <input type="number" class="bill" name="bill" />
+      <label for="tips" class="tip-label">Select Tip %</label>
+      <div class="tips-holder" id="tips">
+        <div>
+          <input type="radio" id="5%" value="5" name="percent" />
+          <label for="5%">5%</label>
+        </div>
+        <div>
+          <input type="radio" id="10%" value="10" name="percent" />
+          <label for="10%">10%</label>
+        </div>
+        <div>
+          <input type="radio" id="15%" value="15" name="percent" />
+          <label for="15%">15%</label>
+        </div>
+        <div>
+          <input type="radio" id="25%" value="25" name="percent" />
+          <label for="25%">25%</label>
+        </div>
+        <div>
+          <input type="radio" id="50%" value="50" name="percent" />
+          <label for="50%">50%</label>
+        </div>
+        <div>
+          <input type="number" name="custom" placeholder="Custom" />
+        </div>
+      </div>
+      <label class="people-label" for="people">Number of People</label>
+      <input type="number" class="people" name="people" />
+      <div class="result">
+        <label class="tip-amount">Tip Amount <br /><span>/ person</span></label>
+        <label class="tip-amount-result">$4.27</label>
+        <label class="total-amount">Total <br /><span>/ person</span></label>
+        <label class="total-amount-result">$32.79</label>
+        <button>RESET</button>
+      </div>
+    </section>
+  </body>
+</html>
